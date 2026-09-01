@@ -6,6 +6,12 @@ int my_atoi(char *str)
     int result=0;
     int digit=0;
 
+     while(str[i] == ' ' || str[i] == '\n' || str[i] == '\t')
+    {
+        i++;
+    }
+
+
     if(str[i] ==  '-')
     {
         sign = -1;
@@ -16,15 +22,12 @@ int my_atoi(char *str)
         i++;
     }
 
-    while(str[i] == " " || str[i] == "\n" || str[i] == "\t")
-    {
-        i++;
-    }
-
+   
     while(str[i] >= '0' && str[i] <= '9')
     {
         digit = str[i] - '0';
         result = result * 10 + digit;
+        i++;
 
     }
 
