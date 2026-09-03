@@ -89,7 +89,7 @@ int main()
    
     
     char *token = my_strtok(str, delim);
-    printf("Tokens :\n");
+    printf("Tokens :");
     
     while (token)
     {
