@@ -1,4 +1,5 @@
 #include<stdio.h>
+// remove spaces using two pointer method with less time and space complexity"
 void removespace_pointer(char str[])
 {
     int read=0, write=0, space=0;
